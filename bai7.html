@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function swap(a,b){
+            let temp = a;
+                a = b;
+                b = temp;
+            return [a,b];
+        }
+        function main(){
+            let num1 = parseFloat(prompt('enter number1 : '));
+            let num2 = parseFloat(prompt('enter number2 : '));
+            document.write('The numbers you entered is : ' + [num1,num2]+ '<br>')
+            document.write('enter after swap is : ' + swap(num1,num2))
+        }
+
+        main();
+    </script>
+</body>
+</html>

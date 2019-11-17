@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function inputm() {
+            length = parseInt(prompt("Enter length of sequence : "));
+            let arr = [];
+            for (i = 0; i < length; i++) {
+                arr[i] = Math.floor(Math.random() * 50);
+            }
+            document.write('The sequence is :' + arr + '<br>');
+            return arr;
+        }
+
+        function swap(arr) {                  
+            arr.reverse();
+            return arr;
+        }
+
+        function main() {
+           let arrNum = inputm();    
+           document.write('The squence after reverse is :'+ swap(arrNum))
+        }
+        main()
+    </script>
+</body>
+
+</html>

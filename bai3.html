@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(){
+            // let num = prompt('enter a number : ');
+            let result = 1;
+            for ( let i = 1 ; i <=input.value ; i++){
+                result *= i;
+            }
+            // return result;
+            document.getElementById('rs').innerHTML = result
+        }
+    </script>
+    <input type="number" oninput="factorial(this.value)" onchange="factorial(this.value);" id='input'>
+    <p>Result is : <span id ='rs'></span></p>
+</body>
+</html>

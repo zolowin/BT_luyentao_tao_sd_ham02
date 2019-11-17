@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function    findMin(num1,num2,num3){
+            let min = num1;
+            if (num2 < min ){
+                min = num2;
+            }
+            if (num3<min){
+                min = num3
+            }
+                
+            document.write(' min of ' + num1 + ', ' + num2 + ', ' + num3 + ' is : ' + min);
+            // return min;
+        }     
+        
+        let num1=Math.floor(Math.random()*20);
+        let num2=Math.floor(Math.random()*20);
+        let num3=Math.floor(Math.random()*20);
+        
+        findMin(num1,num2,num3)
+
+        // document.write(findMin())
+    </script>
+</body>
+</html>
